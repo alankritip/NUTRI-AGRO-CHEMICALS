@@ -114,15 +114,14 @@
                     <div class="opportunity">
                         <img src="assets/img/opportunites/opportunity-1.svg" alt="Icon" class="opportunity__icon">
                         <h4 class="opportunity__title">Connect with our workers</h4>
-                        <p class="opportunity__description">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
-                        </p>
+                        <p class="opportunity__description">At Nutrition Agro Chemicals, we prioritize building strong relationships with our dealers and farmers. Our team of experts is always available to guide you in selecting the right fertilizers and growth enhancers to maximize your agricultural output.</p>
                     </div>
 
                     <div class="opportunity active">
                         <img src="assets/img/opportunites/opportunity-2.svg" alt="Icon" class="opportunity__icon">
                         <h4 class="opportunity__title">Grow your business</h4>
                         <p class="opportunity__description">
-                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                            Partnering with us gives you access to high-quality fertilizers, micronutrients, and plant growth boosters at competitive prices, helping you increase crop yields and profitability. We provide timely delivery and expert support to ensure your business flourishes.
                         </p>
                     </div>
                     <div class="opportunity">
@@ -130,7 +129,7 @@
                         <h4 class="opportunity__title">Social Impact Invesment
                         </h4>
                         <p class="opportunity__description">
-                            At vero eos et accusamus et iusto odio praesentium atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia
+                            By choosing Nutrition Agro Chemicals, you invest in sustainable farming solutions that improve soil health, reduce chemical dependency, and support farmers' livelihoods. Our eco-friendly products help create a greener, healthier future for agriculture.
                         </p>
                     </div>
                 </div>
@@ -141,33 +140,21 @@
         <section class="farm-invest w-105">
             <h2 class="farm-invest__title">  Cultivating Trust, Harvesting Prosperity <br>
                 <span>Nutri Agro Chemicals</span></h2>
-            <a href="#prod" class="btn btn__farm--invest">Shop Now</a>
+            <a href="#prod" class="btn btn__farm--invest" id="shopNowBtn" >Shop Now</a>
         </section>
 
         <footer class="footer">
             <div class="footer__body w-105">
                 <nav class="footer__nav">
                     <ul class="footer_nav__menu">
-                        <!-- <li class="footer_nav__item">
-                            <h4 class="footer_nav__menu__title">CONTACTS</h4>
+                        <li class="footer_nav__item">
+                            <h4 class="footer_nav__menu__title" id="#contact" >CONTACTS</h4>
                         </li>
                         <li class="footer_nav__item">
-                            <a href="#" class="footer_nav__link">About Us</a>
-                        </li>
-                    </ul> -->
-                   
-                    <ul class="footer_nav__menu">
-                        <li class="footer_nav__item">
-                            <h4 class="footer_nav__menu__title">CONTACTS</h4>
-                        </li>
-                        <li class="footer_nav__item">
-                            <a href="#" class="footer_nav__link">Privacy</a>
-                        </li>
-                        <li class="footer_nav__item">
-                            <a href="#" class="footer_nav__link">Terms</a>
-                        </li>
-                        <li class="footer_nav__item">
-                            <a href="#" class="footer_nav__link">Security</a>
+                            <p class="footer_nav__link"> E-mail : nutritionagro4@gmail.com</p><br>
+                            <p class="footer_nav__link"> Corporate Office : KISHANGARH, AJMER-305801, RAJASTHAN (INDIA)</p> <br>
+                            <p class="footer_nav__link"> Plant Address : GULAM KHEDA-242001 (INDIA)</p> <br>
+                            <p class="footer_nav__link" >Customer Care No. :  +91 9369697234</p>
                         </li>
                     </ul>
                 </nav>
@@ -182,28 +169,30 @@
             </div>
         </footer>
         </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>   
      <script>
-        // Define the toggleMenu function
-     function toggleMenu() {
+         // Define the toggleMenu function
+         function toggleMenu() {
          const navMenu = document.getElementById("navMenu");
-        const closeIcon = document.querySelector(".nav-close-icon");
+         const closeIcon = document.querySelector(".nav-close-icon");
          // Toggle the 'open' class on the nav menu to show/hide it
-        navMenu.classList.toggle("open");
+         navMenu.classList.toggle("open");
 
-         // Toggle visibility of the hamburger and close icon
-        closeIcon.style.display = navMenu.classList.contains("open") ? "block" : "none";
-      }
+        // Toggle visibility of the hamburger and close icon
+         closeIcon.style.display = navMenu.classList.contains("open") ? "block" : "none";
+        }
 
-// Optional: Close the menu when clicking outside of the menu area
-document.addEventListener('click', function(event) {
-    const navMenu = document.getElementById("navMenu");
-    const hamburgerMenu = document.querySelector(".hamburger-menu-wrap");
-
-    if (!navMenu.contains(event.target) && !hamburgerMenu.contains(event.target)) {
-        navMenu.classList.remove("open");
-        document.querySelector(".nav-close-icon").style.display = "none";
-    }
-});
+        // Optional: Close the menu when clicking outside of the menu area
+         document.addEventListener('click', function(event) {
+         const navMenu = document.getElementById("navMenu");
+         const hamburgerMenu = document.querySelector(".hamburger-menu-wrap");
+         
+         if (!navMenu.contains(event.target) && !hamburgerMenu.contains(event.target)) {
+            navMenu.classList.remove("open");
+            document.querySelector(".nav-close-icon").style.display = "none";
+        } 
+           });
     </script>
     <script src="assets/js/main.js" type="module"></script>
 

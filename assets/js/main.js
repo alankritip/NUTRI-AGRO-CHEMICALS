@@ -1,64 +1,37 @@
-// let slideIndex = 0;
-// const slides = document.querySelector(".slides");
-// const dots = document.getElementById("dots");
-// const products = document.getElementById("products");
-// const slideshow = document.getElementById("slideshow");
-// const showSlideshowBtn = document.getElementById("showSlideshowBtn");
+// shopnowbtn
+document.addEventListener("DOMContentLoaded", function () {
+    let shopNowBtn = document.getElementById("shopNowBtn");
+    shopNowBtn.addEventListener('click', function (event) {
+        event.preventDefault(); // Prevent default anchor action
+        Swal.fire({
+            // title: 'Contact Us',
+            html: `<strong>Customer Care No. :</strong> 
+                <br>
+                <a href="tel:+919369697234" style="color:rgb(0, 0, 0); text-decoration: none;">+91 9369697234</a> 
+                <br> <br>
+                <strong>E-mail:</strong> 
+                <a href="mailto:nutritionagro4@gmail.com" style="color: #rgb(0,0,0); text-decoration: none;">
+                    nutritionagro4@gmail.com
+                </a>`,
+            imageUrl: 'https://cdn-icons-png.flaticon.com/512/724/724664.png',  /* Contact Icon */
+            imageWidth: 80,  /* Adjust icon size */
+            imageHeight: 80,
+            showCancelButton: true,
+            cancelButtonText: 'Close',
+            confirmButtonText: 'Call Now',
+            customClass: {
+                popup: 'swal2-popup',
+                title: 'swal2-title',
+                htmlContainer: 'swal2-html-container',
+                confirmButton: 'swal2-confirm'
+            }
+        }).then((result) => {
+            if (result.isConfirmed) {
+                window.location.href = "tel:+919369697234"; // Redirect to call
+            }
+        });
+    });
+ });
 
-// function createDots() {
-//     const slideCount = document.querySelectorAll(".slide").length;
-//     for (let i = 0; i < slideCount; i++) {
-//         const dot = document.createElement("span");
-//         dot.classList.add("dot");
-//         dot.setAttribute("onclick", `goToSlide(${i})`);
-//         if (i === 0) dot.classList.add("active");
-//         dots.appendChild(dot);
-//     }
-// }
-
-// function updateDots() {
-//     const allDots = document.querySelectorAll(".dot");
-//     allDots.forEach((dot, index) => {
-//         dot.classList.toggle("active", index === slideIndex);
-//     });
-// }
-
-// function nextSlide() {
-//     slideIndex = (slideIndex + 1) % slides.children.length;
-//     updateSlideshow();
-// }
-
-// function prevSlide() {
-//     slideIndex = (slideIndex - 1 + slides.children.length) % slides.children.length;
-//     updateSlideshow();
-// }
-
-// function goToSlide(index) {
-//     slideIndex = index;
-//     updateSlideshow();
-// }
-
-// function updateSlideshow() {
-//     const slideWidth = slideshow.offsetWidth;
-//     slides.style.transform = `translateX(${-slideIndex * slideWidth}px)`; // This shifts to the selected slide
-//     updateDots();
-// }
-
-
-// function toggleProducts() {
-//     products.style.display = "block";
-//     slideshow.style.display = "none";
-//     showSlideshowBtn.style.display = "block";
-// }
-
-// function toggleSlideshow() {
-//     products.style.display = "none";
-//     slideshow.style.display = "block";
-//     showSlideshowBtn.style.display = "none";
-// }
-
-// createDots();
-// setInterval(nextSlide, 3000);
-// import works from './works.js'
 import testimonials from './testimonials.js'
 testimonials();
