@@ -465,19 +465,14 @@ header {
   transition: transform .3s ease;
 }
 
-.testimonial img {
+ .testimonial img {
   max-width: 100%; 
   /* Ensure images scale properly */
   max-height: 100%;
   object-fit: cover;
    /* Maintain image aspect ratio */
    filter: drop-shadow(0 0 0.5rem #66BB6A);
-}
-
-.testimonial__img img {
-  width: initial;
-  max-width: initial;
-}
+} 
 
 .testimonial:hover {
   transform: scale(1.1);
@@ -738,6 +733,8 @@ header {
 }
 .card_img{
   width: 100%; /* Ensures the image fits the card */
+  height: 100%;
+  padding-top: 60px;
   max-width: 300px; /* Limits the maximum image width */
   border-radius: 5px 5px 0 0;
 }

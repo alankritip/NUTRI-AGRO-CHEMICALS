@@ -23,7 +23,7 @@
                             <li class="menu__item"><a href="#" class="menu__link active">Home</a></li>
                             <li class="menu__item"><a href="#prod" class="menu__link">Products</a></li>
                             <li class="menu__item"><a href="#abt" class="menu__link">About Us</a></li>
-                            <li class="menu__item"><a href="#contact" class="menu__link">Contact</a></li>
+                            <li class="menu__item"><a href="#" onclick="scrollToBottom()" class="menu__link">Contacts</a></li>
                         </ul>
                     </div>
 
@@ -65,25 +65,25 @@
                 <div class="testimonials__body">
                     <div class="testimonials__list">
                         <div class="testimonial">
-                            <img src="assets/img/products/Product-1.png" alt="Product 1">
+                            <img src="assets/img/product_img/Product-1.png" alt="Product 1">
                         </div>
                         <div class="testimonial">
-                            <img src="assets/img/products/Product-2.png" alt="Product 2">
+                            <img src="assets/img/product_img/Product-2.png" alt="Product 2">
                         </div>
                         <div class="testimonial">
-                            <img src="assets/img/products/Product-3.png" alt="Product 3">
+                            <img src="assets/img/product_img/Product-3.png" alt="Product 3">
                         </div>
                         <div class="testimonial">
-                            <img src="assets/img/products/Product-4.png" alt="Product 4">
+                            <img src="assets/img/product_img/Product-4.png" alt="Product 4">
                         </div>
                         <div class="testimonial">
-                            <img src="assets/img/products/Product-2.png" alt="Product 2">
+                            <img src="assets/img/product_img/Product-6.png" alt="Product 2">
                         </div>
                         <div class="testimonial">
-                            <img src="assets/img/products/Product-3.png" alt="Product 3">
+                            <img src="assets/img/product_img/Product-9.png" alt="Product 3">
                         </div>
                         <div class="testimonial">
-                            <img src="assets/img/products/Product-4.png" alt="Product 4">
+                            <img src="assets/img/product_img/Product-10.png" alt="Product 4">
                         </div>
                     </div>
                 </div>
@@ -148,7 +148,7 @@
                 <nav class="footer__nav">
                     <ul class="footer_nav__menu">
                         <li class="footer_nav__item">
-                            <h4 class="footer_nav__menu__title" id="#contact" >CONTACTS</h4>
+                            <h4 class="footer_nav__menu__title" >CONTACTS</h4>
                         </li>
                         <li class="footer_nav__item">
                             <p class="footer_nav__link"> E-mail : nutritionagro4@gmail.com</p><br>
@@ -193,6 +193,9 @@
             document.querySelector(".nav-close-icon").style.display = "none";
         } 
            });
+           function scrollToBottom() {
+           window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+         }
     </script>
     <script src="assets/js/main.js" type="module"></script>
 
