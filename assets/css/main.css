@@ -491,6 +491,7 @@ header {
 .btn__testimonials {
   border-radius: 50%;
   cursor: pointer;
+  pointer-events: auto;
   padding: 1.5rem;
   outline: none;
   border: none;
@@ -509,6 +510,8 @@ header {
 
 .btn__testimonials.disable {
   background-color: #ffffff;
+  opacity: 0.5; /* Visual feedback */
+  pointer-events: none;
   color: #263238;
 }
 
